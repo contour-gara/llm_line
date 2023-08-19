@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/home/gara/git/llm_line/main.py", line 10, in <module>
+    model = AutoModelForCausalLM.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gara/.pyenv/versions/anaconda3-2021.05/envs/llm-line/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 493, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gara/.pyenv/versions/anaconda3-2021.05/envs/llm-line/lib/python3.11/site-packages/transformers/modeling_utils.py", line 2629, in from_pretrained
+    state_dict = load_state_dict(resolved_archive_file)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gara/.pyenv/versions/anaconda3-2021.05/envs/llm-line/lib/python3.11/site-packages/transformers/modeling_utils.py", line 447, in load_state_dict
+    with safe_open(checkpoint_file, framework="pt") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+safetensors_rust.SafetensorError: Error while deserializing header: MetadataIncompleteBuffer
